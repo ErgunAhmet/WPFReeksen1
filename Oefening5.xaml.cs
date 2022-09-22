@@ -29,7 +29,11 @@ namespace Reeks1Variabelen
         {
             dCelcius = Convert.ToDouble(txtCelcius.Text);
 
-            
+            double dFarenheit = dCelcius * 1.8 + 32;
+            double dKelvin = dCelcius + 273.15;
+
+            txtOutput.Text = "Degrees Farenheit: " + Convert.ToString(dFarenheit) + "\r\n" +
+                "Degrees Kelvin: " + Convert.ToString(dKelvin);
         }
     }
 }
