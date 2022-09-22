@@ -1,0 +1,30 @@
+﻿<Window x:Class="Reeks1Variabelen.Oefening1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reeks1Variabelen"
+        mc:Ignorable="d"
+        Title="Oefening1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="data" Margin="290,15,323,46">
+            <StackPanel>
+                <Label x:Name="lblFirstname" Content="Firstname: "/>
+                <TextBox x:Name="txtFirstname" TextWrapping="Wrap" Text="" Width="120"/>
+                <Label x:Name="lblLastname" Content="Lastname: "/>
+                <TextBox x:Name="txtLastname" TextWrapping="Wrap" Text="" Width="120"/>
+                <Button x:Name="btnSend" Content="Send" Click="btnSend_Click"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Resume" Margin="290,10,323,69" Grid.Row="1"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Margin="303,42,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+
+
+
+    </Grid>
+</Window>
